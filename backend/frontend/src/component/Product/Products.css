@@ -1,0 +1,167 @@
+.productsHeading {
+  margin: 2vmax auto;
+  width: 15vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.678);
+  font: 500 1.5vmax "Roboto";
+  text-align: center;
+}
+
+.products-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.products-con2 {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.right-side {
+  width: 80vw;
+  height: 65vh;
+  overflow: auto;
+  margin: 0 0 5vh;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 0 0 0.8vmax;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.products > .productCard {
+  margin: 1vmax auto;
+}
+
+.msg {
+  width: 60vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -0.5vw;
+}
+
+.filterBox {
+  width: 17.5vw;
+  position: relative;
+  bottom: 2vh;
+}
+
+.searchBox {
+  margin: 3px auto 8px;
+  border: 1px solid black;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.searchInp {
+  width: 85%;
+  padding: 0 0 0 10px;
+  background: none;
+  border: none;
+}
+
+.searchBtn {
+  width: 20%;
+  border: 1px solid #00B4CC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.custom-select {
+  /* wrapper style */
+  position: relative;
+  display: block;
+  width: 100%;
+  border: none;
+  margin: 0 auto 1.5vh;
+}
+
+.custom-select > select {
+  border: 1px solid black;
+  outline:none;
+  background: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  margin:0;
+  display:block;
+  width: 100%;
+  cursor: pointer;
+  padding: 8px 20px;
+  font-size: 14px;
+}
+
+.categoryBox {
+  padding: 0%;
+}
+
+.category-link {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.61);
+  font: 400 0.8vmax "Roboto";
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.category-link:hover {
+  color: tomato;
+}
+
+.filterBox > fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.329);
+}
+
+@media screen and (max-width: 600px) {
+  .productsHeading {
+    font-size: 3vmax;
+    width: 25vw;
+  }
+  .filterBox {
+    width: 23vmax;
+    position: static;
+    margin: auto;
+  }
+  .page-link {
+    font: 300 1.7vmax "Roboto";
+  }
+  .category-link {
+    font: 400 1.8vmax "Roboto";
+  }
+  .products-con2 {
+    flex-direction: column-reverse;
+    left: 0;
+  }
+  .right-side {
+    width: 96vw;
+    left: 0;
+    margin: 0;
+  }
+  .products {
+    left: -.3vw;
+  }
+}
+
+@media screen and (min-height: 960px) {
+  .custom-select > select {
+    font-size: 9px;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d6f0ea4b.css",
+    "main.js": "/static/js/main.5243ba3a.js",
+    "static/media/Glasses,Caps.png": "/static/media/Glasses,Caps.aed13ddedbb237eed54e.png",
+    "static/media/Watches.png": "/static/media/Watches.ec014baf813bf7ef6215.png",
+    "static/media/Fashion.png": "/static/media/Fashion.2a19cf9bd3c2ca46dca2.png",
+    "static/media/banner.png": "/static/media/banner.32aa60ff346d387c4cad.png",
+    "static/media/banner2.png": "/static/media/banner2.20842c2e1eb0db2ab1c9.png",
+    "static/media/Footwear.png": "/static/media/Footwear.078c2dafd29f2f69cbcf.png",
+    "static/media/logo.png": "/static/media/logo.af456b9702980b781b4f.png",
+    "static/media/Shirts.png": "/static/media/Shirts.781d669ffde9142d1945.png",
+    "static/media/Tech.png": "/static/media/Tech.8aecd038c81138b41c8b.png",
+    "static/media/Aman.jpg": "/static/media/Aman.686714da46f5336f7bfb.jpg",
+    "static/media/Rohan.jpg": "/static/media/Rohan.9231cee5b8cf154290c8.jpg",
+    "static/media/Profile.png": "/static/media/Profile.697fdcd21f6d157b9073.png",
+    "index.html": "/index.html",
+    "main.d6f0ea4b.css.map": "/static/css/main.d6f0ea4b.css.map",
+    "main.5243ba3a.js.map": "/static/js/main.5243ba3a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d6f0ea4b.css",
+    "static/js/main.5243ba3a.js"
+  ]
+}

@@ -1,0 +1,77 @@
+.acc-con {
+  width: 100%;
+  box-sizing: border-box;
+  background: white;
+  border-left: 1px solid rgba(0, 0, 0, 0.158);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50vh;
+  margin: 5vh auto;
+  z-index: 10;
+}
+
+.acc-head {
+  text-align: center;
+  font: 300 5vmax "Roboto";
+  border-bottom: 1px solid rgba(21, 21, 21, 0.5);
+  width: 20vmax;
+  padding: 1vmax;
+  margin: 1vmax auto 2vmax;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.switch {
+  margin: 3.5vh auto;
+  position: relative;
+  display: inline-block;
+  width: 20vmax;
+  height: 10vmax;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 10vmax;
+  transition: all 0.3s linear;
+}
+
+.switch::after {
+  content: "";
+  position: absolute;
+  top: .2rem;
+  left: .2rem;
+  width: 9.5vmax;
+  height: 9.5vmax;
+  border-radius: 50%;
+  background: var(--background);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: all 0.3s linear;
+}
+
+.toggle:checked + .switch:after {
+  translate: 10vmax 0;
+}
+
+.toggle:checked + .switch {
+  background-color: #7983ff;
+}
+
+.toggle {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .switch {
+    width: 40vmax;
+    height: 20vmax;
+    border-radius: 20vmax;
+  }
+
+  .switch:after {
+    width: 19vmax;
+    height: 19vmax;
+  }
+
+  .toggle:checked + .switch:after {
+    translate: 20vmax 0;
+  }
+}

@@ -1,0 +1,117 @@
+footer {
+  margin-top: 10vmax;
+  padding: 2vmax;
+  background-color: rgb(34, 33, 33);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer > div {
+  font-size: 0.6vmax;
+  height: 14.5vmin;
+  width: 20vw;
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.h {
+  height: 1vmax;
+  font-size: 1.25vmax;
+  margin: 7.5px 0 17.5px;
+}
+
+footer > div > div {
+  line-height: 17px;
+  margin: 4px;
+}
+
+footer > div > a {
+  color: white;
+  text-decoration: none;
+  margin: 1.5px;
+}
+
+.f-1 {
+  height: 15vmin;
+}
+
+.f-1 > .h {
+  height: 2vmax;
+  margin: 0;
+}
+
+.f-1 > .div {
+  display: flex;
+  align-items: center;
+}
+
+.f-1 > .div > div {
+  margin: 5px 0;
+  background-image: url("../../../images/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2vmin;
+  height: 4.15vmin;
+  width: 4.15vmin;
+}
+
+.look {
+  width: 100%;
+  height: 2.1vh;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-self: center;
+  background-color: white;
+}
+
+.searchTerm {
+  font-size: 1.05vmax;
+  width: 100%;
+  padding: 0 0 0 10px;
+  background: none;
+  border: none;
+}
+
+.searchButton {
+  color: black;
+  width: 20%;
+  height: 100%;
+  position: relative;
+  border: 1px solid #00B4CC;
+  background: none;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  font-size: 1.6vh;
+  right: 2.5%;
+  top: 4.6%;
+}
+
+@media screen and (max-width: 600px) {
+  footer div {
+    font-size: 0.7vmax;
+    height: 14vmin;
+  }
+  footer > div > div {
+    line-height: 7.6px;
+  }
+  .h {
+    font-size: 1.3vmax;
+    margin: 1.5px 0 5px;
+  }
+  .searchTerm {
+    width: 60%;
+    font-size: 1.5em;
+  }
+  .searchButton{
+    right: 0;
+  }
+}

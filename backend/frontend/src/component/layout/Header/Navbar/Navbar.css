@@ -1,0 +1,276 @@
+.navbar {
+  background-color: white;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  max-width: 1500px;
+  border-bottom: 2px solid black;
+}
+
+.main-container {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color:rgba(0,0,0,0.3);
+  height: 106vh;
+}
+
+.nav-logo {
+  color: blue;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.4em;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.nav-logo > div {
+  width: 25vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo > div > div {
+  background-image: url("../../../../images/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2vmin;
+  height: 6vmin;
+  width: 6vmin;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 2rem;
+  overflow: hidden;
+}
+
+.nav-links {
+  position: relative;
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-item {
+  position: relative;
+  line-height: 40px;
+  margin-right: 1rem;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+  background: blue;
+}
+
+.nav-item.active {
+  color: blue;
+  border: 1px solid blue;
+}
+
+.nav-icon {
+  display: none;
+}
+
+.icons {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1.9) translate(-25%, 7.5%);
+}
+
+.icons:active {
+  border-style: outset;
+  border: none;
+  outline: none;
+}
+
+.icons > .i {
+  text-decoration: none;
+  position: relative;
+  color: black;
+  margin: 1px;
+}
+
+.model {
+  width: 85%;
+  height: 8%;
+  border-radius: 2.5vmin;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  background-color: white;
+  top: 40vh;
+  left: 7.5%;
+}
+
+.model > .model-input {
+  font-size: 3vmax;
+  width: 70%;
+  padding: 0 0 0 25px;
+  background: none;
+  border: none;
+}
+
+.model > .model-button {
+  color: black;
+  width: 20%;
+  position: relative;
+  border: 1px solid #00B4CC;
+  background: none;
+  border: none;
+  outline: none;
+  text-align: center;
+  cursor: pointer;
+  right: 2.5%;
+}
+
+.i .cart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  position: relative;
+  bottom: 2.5px;
+}
+
+.i .cart p {
+  background-color: blue;
+  position: absolute;
+  bottom: 16.5px;
+  left: 15px;
+  text-align: center;
+  line-height: 1.5;
+  border-radius: 50%;
+  font-size: .4em;
+  color: white;
+  width: 11px;
+  height: 11px;
+}
+
+.nav-log {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-logo {
+    font-size: 1em;
+  }
+
+  .nav-logo > div {
+    width: 50vw;
+  }
+
+  .nav-logo > div > div {
+    border-radius: 5vmin;
+    height: 13vmin;
+    width: 13vmin;
+  }
+  
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 89%;
+    border-top: 1pxsolid #fff;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: white;
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-item{
+    left: -10vw;
+    border-bottom: 1px solid black;
+  }
+  .nav-item .active {
+    color: blue;
+  }
+  .nav-item:hover:after {
+    display: none;
+  }
+  .nav-links {
+    left: -5vw;
+    padding: 1.5rem;
+    width: 100%;
+    display: table;
+  }
+  .nav-icon {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+    color: black;
+  }
+  .icons{
+    transform: scale(1.5) translate(0%, 10.5%);
+    margin: 30px;
+  }
+  .model > .model-input {
+    width: 66.5%;
+    font-size: 1.5em;
+  }
+  .model > .model-button {
+    top: 1%;
+    right: 0;
+  }
+}
+
+@media screen and (min-height: 960px) {
+  .nav-logo > div {
+    width: 32vw;
+  }
+  .nav-logo > div > div {
+    border-radius: 1.39vmin;
+    width: 7vmin;
+    height: 7vmin;
+  }
+}
+
+.hide {
+  width: 0px;
+  height: 0px;
+  border: none;
+}
